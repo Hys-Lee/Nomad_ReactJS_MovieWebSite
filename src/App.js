@@ -14,7 +14,7 @@ function App() {
           <Details />
         </Route>
 
-        <Route path={process.env.PUBLIC_URL + "/"}>
+        <Route path={process.env.PUBLIC_URL + "/"} element={Home}>
           <Home />
         </Route>
       </Switch>
