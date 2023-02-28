@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Movie/router/Home"
 import Details from "./Movie/router/Details"
+import "./Movie/Style/main.css"
 
 function App() {
 

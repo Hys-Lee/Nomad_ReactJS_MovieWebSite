@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+.container{
+    
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left:5%;
+    padding-right:5%;
+    background-color:ivory;
+}
+.popmovies__title{
+    font-weight: bold;
+    font-size: 300%;
+    font-family: 'Tilt Neon', cursive;;
+    align-self: center;
+}
+
+.popmovies__distLine{
+    border:0;
+    background-color:lightslategray;
+    height:1px;
+    width:100%;
+    margin-bottom: 5%;
+    
+}
+@media(max-width:1023px){
+    .popmovies__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+        row-gap:1%;
+        /*  그리드가 쓸모있긴 한가 봄. 공부해놓자.*/
+    }
+}
+@media (min-width:1024px){
+    .popmovies__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5%;
+        row-gap:1%;
+        /*  그리드가 쓸모있긴 한가 봄. 공부해놓자.*/
+    }
+}
+.movie-box{
+    background-color:white;
+    display: flex;
+    
+    
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    z-index: 2;
+    box-shadow: 0px 10px 20px 5px gray;
+}
+.movie-box__coverImg{
+    padding:5%;
+    
+}
+.nonimg-box{
+    display:grid;
+    grid-template-rows: 1fr 2fr 2fr;
+}
+.movie-box__link{
+    align-self: center;
+
+}
+.movie-box__title{
+    font-size: 180%;
+    font-family: 'Tilt Neon', cursive;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:5%;
+    margin:0;
+    
+}
+.movie-box__link{
+    
+    text-decoration: none;
+    color:black;
+    
+}
+
+.paragraph-box__title{
+    display:flex;
+    
+    font-size: 150%;
+    padding:5%;
+    margin:0;
+}
+.paragraph-box__container{
+    list-style: none;
+    
+}
+.paragraph-box__item{
+    
+    padding:5%;
+    margin:-10%;
+}
+
+.paragraph-box__description{
+    padding:5%;
+    margin:0%;
+}

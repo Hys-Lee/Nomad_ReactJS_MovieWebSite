@@ -25,11 +25,14 @@ function Home() {
     }, []);
 
     return (
-        <div>
-            <h1>Hi</h1>
+        <div class="container">
+
+            <h1 class="popmovies__title">Popular Movies</h1>
+            <hr class="popmovies__distLine" />
             {loading ? <h2>Loading...</h2> :
 
-                <div>
+
+                <div class="popmovies__container">
                     {movies.map(movie => {
 
                         return (<Movie
@@ -37,11 +40,14 @@ function Home() {
                             coverImg={movie.medium_cover_image}
                             title={movie.title}
                             genres={movie.genres}
-                            summary={movie.summary} />)
+                            summary={movie.summary}
+
+                        />)
                     })}
                 </div>
 
             }
+
         </div>
     );
 

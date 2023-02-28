@@ -30,13 +30,13 @@ function Details() {
 
 
     return (<div>
-        <h1>Details</h1>
-        <img src={details.large_cover_image}></img>
-        <h2>{details.title_long}</h2>
-        <p>
+        <h1 class="popmovies__title--detailed">Details</h1>
+        <img class="movie-box__coverImg--detailed" src={details.large_cover_image}></img>
+        <h2 class="movie-box__title--detailed">{details.title_long}</h2>
+        <p class="movie-box__description--detailed">
             {details.description_full}
         </p>
-        <h3> rating:  {details.rating} </h3>
+        <h3 class="movie-box__rating--detailed"> rating:  {details.rating} </h3>
 
     </div>
     );
